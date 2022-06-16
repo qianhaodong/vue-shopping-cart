@@ -1,6 +1,9 @@
 <template>
     <div id="app">
-        <router-view />
+        <keep-alive>
+            <router-view v-if="$route.meta.keepAlive" />
+        </keep-alive>
+        <router-view v-if="!$route.meta.keepAlive" />
     </div>
 </template>
 
@@ -11,5 +14,6 @@
     -moz-osx-font-smoothing: grayscale;
     color: #2c3e50;
     font-size: 14px;
+    max-width: 640px;
 }
 </style>

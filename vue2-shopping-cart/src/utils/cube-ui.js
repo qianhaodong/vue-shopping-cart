@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import { Style, Button, ScrollNav } from 'cube-ui'
+import { Style, Button, ScrollNav, Dialog } from 'cube-ui'
 
-[Button, ScrollNav].forEach(item => {
+[Button, ScrollNav, Dialog].forEach(item => {
     Vue.use(item)
 })

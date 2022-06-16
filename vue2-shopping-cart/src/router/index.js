@@ -8,7 +8,10 @@ const routes = [
 	{
 		path: '/',
 		name: 'GoodsList',
-		component: GoodsList
+		component: GoodsList,
+		meta: {
+			keepAlive: true
+		}
 	},
 	{
 		path: '/detail',
