@@ -1,0 +1,106 @@
+.goods-list-wrap {
+    .scroll-nav-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 52px;
+        width: 100%;
+
+        ::v-deep {
+            .cube-scroll-nav-main {
+                background-color: #efeff4;
+            }
+    
+            .cube-sticky-fixed {
+                background-color: #efeff4;
+            }
+    
+            .cube-scroll-nav-bar {
+                width: 120px;
+                background-color: transparent;
+            }
+    
+            .cube-scroll-nav-bar-item {
+                padding: 15px;
+            }
+    
+            .cube-scroll-nav-bar-item_active {
+                background-color: #fff;
+            }
+    
+            .cube-scroll-nav-panels {
+                background-color: #fff;
+            }
+    
+            .cube-scroll-nav-panel-title {
+                padding: 15px;
+                font-size: 16px;
+                font-weight: 700;
+                background-color: #fff;
+            }
+        }
+    }    
+
+    .food-item {
+        display: flex;
+        align-items: flex-start;
+        padding: 0 10px 30px;
+        font-size: 12px;
+        color: #666;
+
+        .food-item-icon {
+            margin-right: 10px;
+            width: 72px;
+            height: 72px;
+            border-radius: 6px;
+        }
+
+        .food-item-info {
+            flex: 1;
+            line-height: 20px;
+
+            .food-item-name {
+                margin-bottom: 4px;
+                font-size: 15px;
+                font-weight: 700;
+                color: #2c3e50;
+            }
+
+            .food-item-desc {
+                margin-bottom: 4px;
+                line-height: 14px;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+            }
+
+            .food-item-operate {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .food-item-price {
+                    color: #ff4247;
+                    font-weight: 600;
+
+                    span {
+                        font-size: 16px;
+                    }
+                }
+
+                .food-item-add-btn {
+                    position: relative;
+                    margin: 4px 0;
+                    padding: 0 10px;
+                    line-height: 24px;
+                    font-size: 12px;
+                    color: #fff;
+                    background-color: #3b9cff;
+                    border-radius: 30px;
+                }
+            }
+
+        }
+    }
+}
